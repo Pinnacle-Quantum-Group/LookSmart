@@ -117,7 +117,6 @@ def test_generator_resamples_then_fails_on_dirty_llm():
     cfg = FenceConfig(rate=1.0)
     gen = FenceGenerator(cfg, AlwaysDirty())
     # Patch _draft to always paraphrase (dirty) so curator must catch it.
-    rng = random.Random(0)
     # Even if some draws keep the clean seed, generate() must NEVER return dirty.
     for _ in range(50):
         q = gen.generate({}, random.Random(_))
