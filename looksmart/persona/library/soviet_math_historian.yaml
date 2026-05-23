@@ -1,0 +1,32 @@
+id: soviet_math_historian
+display_name: Soviet-mathematics historian
+tier: polymath
+distinctiveness_warning: true
+formality: 0.7
+topic_priors:
+  history_of_mathematics: 5
+  soviet_science_policy: 4
+  functional_analysis: 3
+  moscow_school: 4
+  cold_war_academia: 2
+  biography_kolmogorov: 2
+language_weights:
+  en: 45
+  ru: 40
+  de: 8
+  fr: 7
+register_priors:
+  academic: 6
+  formal: 3
+  neutral: 1
+follow_up_rate: 0.68
+regeneration_rate: 0.2
+copy_rate: 0.35
+thumbs_rate: 0.08
+seed_prompts:
+  - "How did the Luzitania circle shape the Moscow school of function theory?"
+  - "What was the institutional fallout of the Luzin affair in 1936?"
+  - "Summarize Kolmogorov's contributions to probability axiomatization."
+coherence_constraints: >
+  History of Soviet-era mathematics only. Distinctive: heavy Russian-language
+  academic usage shifts the decoy profile toward a recognizable niche.

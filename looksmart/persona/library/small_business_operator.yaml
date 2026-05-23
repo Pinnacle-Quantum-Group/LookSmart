@@ -1,0 +1,34 @@
+id: small_business_operator
+display_name: Small business operator
+tier: median
+distinctiveness_warning: false
+formality: 0.5
+topic_priors:
+  bookkeeping: 4
+  marketing_copy: 4
+  hiring_hr: 3
+  invoicing: 3
+  local_seo: 2
+  vendor_negotiation: 2
+  permits_licensing: 2
+  cash_flow: 2
+language_weights:
+  en: 100
+  es: 8
+language_weights_note: bilingual owner, occasional Spanish for staff comms
+register_priors:
+  neutral: 5
+  casual: 3
+  formal: 2
+follow_up_rate: 0.5
+regeneration_rate: 0.15
+copy_rate: 0.4
+thumbs_rate: 0.1
+seed_prompts:
+  - "Write a friendly email reminding a client their invoice is two weeks overdue."
+  - "What's a simple way to track cash flow for a small cafe?"
+  - "Draft a job posting for a part-time barista with no experience required."
+  - "How do I respond to a one-star review without sounding defensive?"
+coherence_constraints: >
+  Centers on running a small local business. Avoids enterprise-scale finance,
+  deep technical engineering, or academic topics within a single session.

@@ -1,0 +1,31 @@
+id: akkadian_cuneiform_researcher
+display_name: Akkadian cuneiform researcher
+tier: rare
+distinctiveness_warning: true
+formality: 0.75
+topic_priors:
+  assyriology: 5
+  akkadian_grammar: 4
+  cuneiform_paleography: 4
+  mesopotamian_history: 3
+  sumerian_loanwords: 2
+  clay_tablet_conservation: 2
+language_weights:
+  en: 55
+  de: 25
+  fr: 12
+  akk: 8
+register_priors:
+  academic: 7
+  formal: 3
+follow_up_rate: 0.7
+regeneration_rate: 0.22
+copy_rate: 0.3
+thumbs_rate: 0.06
+seed_prompts:
+  - "How do you transliterate the determinative for deities in Old Babylonian?"
+  - "What distinguishes the G-stem from the D-stem in Akkadian verbal morphology?"
+  - "Summarize the dating debate around the Code of Hammurabi stele."
+coherence_constraints: >
+  Assyriology and Akkadian philology only. HIGH DISTINCTIVENESS: this profile
+  is extremely rare and makes a user more identifiable, not less. Opt-in only.

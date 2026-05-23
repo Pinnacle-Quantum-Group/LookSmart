@@ -1,0 +1,33 @@
+id: catalan_medievalist
+display_name: Catalan medievalist
+tier: polymath
+distinctiveness_warning: true
+formality: 0.7
+topic_priors:
+  medieval_iberian_history: 5
+  catalan_literature: 4
+  paleography: 2
+  crown_of_aragon: 4
+  romance_philology: 3
+  monastic_archives: 2
+language_weights:
+  ca: 40
+  es: 25
+  en: 20
+  la: 8
+  fr: 5
+register_priors:
+  academic: 6
+  formal: 3
+  neutral: 1
+follow_up_rate: 0.7
+regeneration_rate: 0.2
+copy_rate: 0.35
+thumbs_rate: 0.08
+seed_prompts:
+  - "What administrative role did the Llibre del Consolat de Mar play in the Crown of Aragon?"
+  - "Can you summarize the manuscript tradition of Ramon Llull's Ars Magna?"
+  - "How did notarial culture develop in 13th-century Barcelona?"
+coherence_constraints: >
+  Medieval Iberian / Crown of Aragon scholarship only. Distinctive: heavy
+  Catalan and Latin usage is an aesthetically identifiable profile.
