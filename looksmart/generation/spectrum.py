@@ -17,7 +17,7 @@ from __future__ import annotations
 
 import random
 
-from ..models import GenerationMode, Query
+from ..models import Query
 from .base import DecoyGenerator, weighted_choice
 
 

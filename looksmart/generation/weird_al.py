@@ -178,11 +178,11 @@ def _poisson(rng: random.Random, lam: float) -> int:
         return 0
     import math
 
-    l = math.exp(-lam)
+    threshold = math.exp(-lam)
     k = 0
     p = 1.0
     while True:
         k += 1
         p *= rng.random()
-        if p <= l:
+        if p <= threshold:
             return k - 1

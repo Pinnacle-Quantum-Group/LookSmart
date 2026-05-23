@@ -8,7 +8,6 @@ signal is recorded locally and treated as best-effort).
 
 from __future__ import annotations
 
-import httpx
 
 from ..models import EngagementType, ProviderResponse
 from .base import ProviderAdapter
