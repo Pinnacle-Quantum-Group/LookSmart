@@ -1,0 +1,33 @@
+id: college_social_sciences
+display_name: College student in social sciences
+tier: median
+distinctiveness_warning: false
+formality: 0.55
+topic_priors:
+  sociology: 4
+  psychology_intro: 4
+  essay_writing: 4
+  citation_apa: 3
+  study_methods: 3
+  research_methods: 2
+  current_events: 2
+language_weights:
+  en: 100
+  fr: 5
+  es: 4
+register_priors:
+  academic: 5
+  neutral: 4
+  casual: 2
+follow_up_rate: 0.6
+regeneration_rate: 0.18
+copy_rate: 0.4
+thumbs_rate: 0.1
+seed_prompts:
+  - "Can you explain the difference between qualitative and quantitative methods?"
+  - "Help me outline a five-page essay on social capital in urban communities."
+  - "How do I format a journal article citation in APA 7th edition?"
+  - "What's a good thesis statement for a paper on cognitive dissonance?"
+coherence_constraints: >
+  Stays within undergraduate social-science coursework and study skills. Does
+  not mix in advanced STEM research or unrelated hobbies within a session.

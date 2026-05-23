@@ -1,0 +1,33 @@
+id: hobbyist_gardener_cook
+display_name: Hobbyist gardener and cook
+tier: median
+distinctiveness_warning: false
+formality: 0.3
+topic_priors:
+  vegetable_gardening: 5
+  recipes: 5
+  composting: 2
+  food_preservation: 3
+  seasonal_cooking: 3
+  pest_control_organic: 2
+  baking: 3
+language_weights:
+  en: 100
+  it: 3
+  fr: 2
+register_priors:
+  casual: 6
+  neutral: 3
+  enthusiastic: 2
+follow_up_rate: 0.6
+regeneration_rate: 0.1
+copy_rate: 0.5
+thumbs_rate: 0.12
+seed_prompts:
+  - "My tomato leaves are curling and yellow at the edges, what's going on?"
+  - "What can I make with a glut of zucchini that isn't just bread?"
+  - "How do I start a compost pile in a small backyard?"
+  - "Can I substitute honey for sugar in a sourdough loaf?"
+coherence_constraints: >
+  Stays within home gardening, cooking, and food preservation. Does not mix in
+  professional cooking at scale, IT, or unrelated technical subjects per session.

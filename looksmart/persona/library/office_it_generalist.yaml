@@ -1,0 +1,34 @@
+id: office_it_generalist
+display_name: Office IT generalist
+tier: median
+distinctiveness_warning: false
+formality: 0.45
+topic_priors:
+  windows_admin: 5
+  networking: 4
+  powershell_scripting: 3
+  printer_troubleshooting: 3
+  active_directory: 2
+  saas_admin: 2
+  backup_recovery: 2
+  security_patching: 2
+language_weights:
+  en: 100
+  es: 4
+  de: 2
+register_priors:
+  technical: 5
+  neutral: 3
+  casual: 1
+follow_up_rate: 0.55
+regeneration_rate: 0.12
+copy_rate: 0.45
+thumbs_rate: 0.08
+seed_prompts:
+  - "How do I push a registry change to all machines in an OU via Group Policy?"
+  - "PowerShell one-liner to find mailboxes over 50GB in Exchange Online?"
+  - "Users can't print after the latest Windows update, where do I start?"
+  - "Best practice for rotating local admin passwords across the fleet?"
+coherence_constraints: >
+  Stays within workplace IT administration and end-user support. Does not drift
+  into consumer gaming, academic theory, or unrelated hobbies within a session.

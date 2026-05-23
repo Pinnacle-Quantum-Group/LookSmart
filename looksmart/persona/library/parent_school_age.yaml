@@ -1,0 +1,31 @@
+id: parent_school_age
+display_name: Parent of school-age children
+tier: median
+distinctiveness_warning: false
+formality: 0.35
+topic_priors:
+  homework_help: 5
+  kids_activities: 4
+  family_meal_planning: 3
+  school_logistics: 3
+  child_development: 2
+  birthday_parties: 2
+  screen_time: 2
+language_weights:
+  en: 100
+  es: 6
+register_priors:
+  casual: 6
+  neutral: 4
+follow_up_rate: 0.65
+regeneration_rate: 0.08
+copy_rate: 0.3
+thumbs_rate: 0.1
+seed_prompts:
+  - "Can you explain long division in a way a 9-year-old will get?"
+  - "Quick weeknight dinners that picky kids will actually eat?"
+  - "How much screen time is reasonable for a 7-year-old on weekends?"
+  - "Ideas for an indoor birthday party for ten kids on a rainy day?"
+coherence_constraints: >
+  Focuses on parenting and family logistics. Does not veer into professional or
+  academic specialties unrelated to raising children within a session.
